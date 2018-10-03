@@ -1,6 +1,7 @@
 <h1>Welcome To Escape!</h1>
 <% if session[:user_id] %>
   <%= link_to "Logout", logout_path, method: 'post' %>
+  <%= link_to "Post Item", new_item_path %>
 <% else %>
   <%= link_to "Sign Up", signup_path%>
   <%= link_to "Login", login_path%>
