@@ -5,7 +5,7 @@
   <%= f.label :description %>
   <%= f.text_area :description %>
   <%= f.label :price %>
-  <%= f.text_field :price %>
-  <%= f.hidden_field :renter_id, value: session[:user_id] %>
+  <%= f.number_field :price %>
+  <%= f.hidden_field :seller_id, value: session[:user_id] %>
   <%= f.submit "Post Item" %>
 <% end %>

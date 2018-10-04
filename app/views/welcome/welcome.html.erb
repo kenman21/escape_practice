@@ -6,3 +6,5 @@
   <%= link_to "Sign Up", signup_path%>
   <%= link_to "Login", login_path%>
 <% end %>
+
+<%= render :partial => "item", :collection => @items %>
